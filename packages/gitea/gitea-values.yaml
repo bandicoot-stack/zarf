@@ -13,6 +13,7 @@ gitea:
     server:
       DISABLE_SSH: true
       OFFLINE_MODE: true
+      LFS_START_SERVER: true
     database:
       DB_TYPE: sqlite3
       # Note that the init script checks to see if the IP & port of the database service is accessible, so make sure you set those to something that resolves as successful (since sqlite uses files on disk setting the port & ip won't affect the running of gitea).
